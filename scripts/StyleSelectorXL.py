@@ -124,7 +124,7 @@ class StyleSelectorXL(scripts.Script):
                 is_enabled = gr.Checkbox(
                     value=True, label="Enable Style Selector")
                 style = gr.Radio(
-                    label='Codec', choices=self.styleNames, value='sai-base')
+                    label='Codec', choices=self.styleNames, value='base')
 
         # Ignore the error if the attribute is not present
 
