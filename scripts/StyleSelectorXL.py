@@ -1,11 +1,11 @@
 import contextlib
 
 import gradio as gr
-from modules import scripts
-from modules import script_callbacks
+from modules import scripts, shared, script_callbacks
+from modules.ui_components import FormRow, FormColumn, FormGroup, ToolButton
 import json
 import os
-
+import random
 stylespath = ""
 
 
@@ -121,21 +121,35 @@ class StyleSelectorXL(scripts.Script):
     def ui(self, is_img2img):
         with gr.Group():
             with gr.Accordion("SDXL Styles", open=True):
-                is_enabled = gr.Checkbox(
-                    value=True, label="Enable Style Selector")
-                style = gr.Radio(
-                    label='Codec', choices=self.styleNames, value='base')
+                with FormRow():
+                    with FormColumn(min_width=160):
+                        is_enabled = gr.Checkbox(
+                            value=True, label="Enable Style Selector", info="Enable Or Disable Style Selector ")
+                    with FormColumn(elem_id="Randomize Style"):
+                        randomize = gr.Checkbox(
+                            value=False, label="Randomize Style", info="This Will Override Selected Style")
+
+                style_ui_type = shared.opts.data.get(
+                    "styles_ui",  "radio-buttons")
+
+                if style_ui_type == "select-list":
+                    style = gr.Dropdown(
+                        self.styleNames, value='base', multiselect=False, label="Select Style")
+                else:
+                    style = gr.Radio(
+                        label='Style', choices=self.styleNames, value='base')
 
         # Ignore the error if the attribute is not present
 
-        return [is_enabled,  style]
+        return [is_enabled, randomize,  style]
 
-    def process(self, p, is_enabled,  style):
+    def process(self, p, is_enabled, randomize,  style):
         if not is_enabled:
             return
 
         p.extra_generation_params["Style Selector Enabled"] = True
-
+        if randomize:
+            style = random.choice(self.styleNames)
         for i, prompt in enumerate(p.all_prompts):      # for each image in batch
 
             positivePrompt = createPositive(style, prompt)
@@ -162,3 +176,12 @@ class StyleSelectorXL(scripts.Script):
             #self.neg_prompt_boxTXT = component
         # if kwargs.get("elem_id") == "img2img_neg_prompt":
             #self.neg_prompt_boxIMG = component
+
+
+def on_ui_settings():
+    section = ("styleselector", "Style Selector")
+    shared.opts.add_option("styles_ui", shared.OptionInfo(
+        "radio-buttons", "How should Style Names Rendered on UI", gr.Radio, {"choices": ["radio-buttons", "select-list"]}, section=section))
+
+
+script_callbacks.on_ui_settings(on_ui_settings)
