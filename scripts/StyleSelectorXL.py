@@ -128,6 +128,14 @@ class StyleSelectorXL(scripts.Script):
                     with FormColumn(elem_id="Randomize Style"):
                         randomize = gr.Checkbox(
                             value=False, label="Randomize Style", info="This Will Override Selected Style")
+                    with FormColumn(elem_id="Randomize For Each Iteration"):
+                        randomizeEach = gr.Checkbox(
+                            value=False, label="Randomize For Each Iteration", info="Every prompt in Batch Will Have Random Style")
+
+                with FormRow():
+                    with FormColumn(min_width=160):
+                        allstyles = gr.Checkbox(
+                            value=False, label="Generate All Styles In Order", info="To Generate Your Prompt in All Available Styles, Its Better to set yout batch size to " + str(len(self.styleNames)) + " ( Style Count)")
 
                 style_ui_type = shared.opts.data.get(
                     "styles_ui",  "radio-buttons")
@@ -141,24 +149,46 @@ class StyleSelectorXL(scripts.Script):
 
         # Ignore the error if the attribute is not present
 
-        return [is_enabled, randomize,  style]
+        return [is_enabled, randomize, randomizeEach, allstyles, style]
 
-    def process(self, p, is_enabled, randomize,  style):
+    def process(self, p, is_enabled, randomize, randomizeEach, allstyles,  style):
         if not is_enabled:
             return
 
-        p.extra_generation_params["Style Selector Enabled"] = True
         if randomize:
             style = random.choice(self.styleNames)
-        for i, prompt in enumerate(p.all_prompts):      # for each image in batch
+        batchCount = len(p.all_prompts)
 
-            positivePrompt = createPositive(style, prompt)
-            p.all_prompts[i] = positivePrompt
-        # for each image in batch
-        for i, prompt in enumerate(p.all_negative_prompts):
+        if(batchCount == 1):
+            # for each image in batch
+            for i, prompt in enumerate(p.all_prompts):
+                positivePrompt = createPositive(style, prompt)
+                p.all_prompts[i] = positivePrompt
+            for i, prompt in enumerate(p.all_negative_prompts):
+                negativePrompt = createNegative(style, prompt)
+                p.all_negative_prompts[i] = negativePrompt
+        if(batchCount > 1):
+            styles = {}
+            for i, prompt in enumerate(p.all_prompts):
+                if(randomize):
+                    styles[i] = random.choice(self.styleNames)
+                else:
+                    styles[i] = style
+                if(allstyles):
+                    styles[i] = self.styleNames[i % len(self.styleNames)]
+            # for each image in batch
+            for i, prompt in enumerate(p.all_prompts):
+                positivePrompt = createPositive(
+                    styles[i] if randomizeEach or allstyles else styles[0], prompt)
+                p.all_prompts[i] = positivePrompt
+            for i, prompt in enumerate(p.all_negative_prompts):
+                negativePrompt = createNegative(
+                    styles[i] if randomizeEach or allstyles else styles[0], prompt)
+                p.all_negative_prompts[i] = negativePrompt
 
-            negativePrompt = createNegative(style, prompt)
-            p.all_negative_prompts[i] = negativePrompt
+        p.extra_generation_params["Style Selector Enabled"] = True
+        p.extra_generation_params["Style Selector Randomize"] = randomize
+        p.extra_generation_params["Style Selector Style"] = style
 
     def after_component(self, component, **kwargs):
         # https://github.com/AUTOMATIC1111/stable-diffusion-webui/pull/7456#issuecomment-1414465888 helpfull link
