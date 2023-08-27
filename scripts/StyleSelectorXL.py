@@ -119,12 +119,13 @@ class StyleSelectorXL(scripts.Script):
         return scripts.AlwaysVisible
 
     def ui(self, is_img2img):
+        enabled = getattr(shared.opts, "enable_styleselector_by_default", True)
         with gr.Group():
-            with gr.Accordion("SDXL Styles", open=True):
+            with gr.Accordion("SDXL Styles", open=enabled):
                 with FormRow():
                     with FormColumn(min_width=160):
                         is_enabled = gr.Checkbox(
-                            value=True, label="Enable Style Selector", info="Enable Or Disable Style Selector ")
+                            value=enabled, label="Enable Style Selector", info="Enable Or Disable Style Selector ")
                     with FormColumn(elem_id="Randomize Style"):
                         randomize = gr.Checkbox(
                             value=False, label="Randomize Style", info="This Will Override Selected Style")
@@ -135,7 +136,7 @@ class StyleSelectorXL(scripts.Script):
                 with FormRow():
                     with FormColumn(min_width=160):
                         allstyles = gr.Checkbox(
-                            value=False, label="Generate All Styles In Order", info="To Generate Your Prompt in All Available Styles, Its Better to set yout batch size to " + str(len(self.styleNames)) + " ( Style Count)")
+                            value=False, label="Generate All Styles In Order", info="To Generate Your Prompt in All Available Styles, Its Better to set batch to " + str(len(self.styleNames)) + " ( Style Count)")
 
                 style_ui_type = shared.opts.data.get(
                     "styles_ui",  "radio-buttons")
@@ -213,5 +214,13 @@ def on_ui_settings():
     shared.opts.add_option("styles_ui", shared.OptionInfo(
         "radio-buttons", "How should Style Names Rendered on UI", gr.Radio, {"choices": ["radio-buttons", "select-list"]}, section=section))
 
-
+    shared.opts.add_option(
+        "enable_styleselector_by_default",
+        shared.OptionInfo(
+            True,
+            "enable Style Selector by default",
+            gr.Checkbox,
+            section=section
+            )
+    )
 script_callbacks.on_ui_settings(on_ui_settings)
