@@ -136,7 +136,7 @@ class StyleSelectorXL(scripts.Script):
                 with FormRow():
                     with FormColumn(min_width=160):
                         allstyles = gr.Checkbox(
-                            value=False, label="Generate All Styles In Order", info="To Generate Your Prompt in All Available Styles, Its Better to set yout batch size to " + str(len(self.styleNames)) + " ( Style Count)")
+                            value=False, label="Generate All Styles In Order", info="To Generate Your Prompt in All Available Styles, Its Better to set batch count to " + str(len(self.styleNames)) + " ( Style Count)")
 
                 style_ui_type = shared.opts.data.get(
                     "styles_ui",  "radio-buttons")
