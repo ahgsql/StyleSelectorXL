@@ -34,7 +34,7 @@ def read_sdxl_styles(json_data):
             if 'name' in item:
                 # Append the value of 'name' to the names list
                 names.append(item['name'])
-
+    names.sort()
     return names
 
 
