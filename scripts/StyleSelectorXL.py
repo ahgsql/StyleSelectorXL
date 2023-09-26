@@ -6,6 +6,7 @@ from modules.ui_components import FormRow, FormColumn, FormGroup, ToolButton
 import json
 import os
 import random
+import time
 stylespath = ""
 
 
@@ -168,15 +169,22 @@ class StyleSelectorXL(scripts.Script):
             for i, prompt in enumerate(p.all_negative_prompts):
                 negativePrompt = createNegative(style, prompt)
                 p.all_negative_prompts[i] = negativePrompt
+
         if(batchCount > 1):
             styles = {}
+            L = len(self.styleNames)
+            counter = 0
             for i, prompt in enumerate(p.all_prompts):
                 if(randomize):
-                    styles[i] = random.choice(self.styleNames)
+                    sys_random = random.SystemRandom(time.time()+i)
+                    styles[i] = sys_random.choice(self.styleNames)
                 else:
                     styles[i] = style
-                if(allstyles):
-                    styles[i] = self.styleNames[i % len(self.styleNames)]
+                if(allstyles):   
+                    if(counter >= L):
+                        counter = 0
+                    styles[i] = self.styleNames[counter]
+                    counter += 1
             # for each image in batch
             for i, prompt in enumerate(p.all_prompts):
                 positivePrompt = createPositive(
@@ -186,11 +194,17 @@ class StyleSelectorXL(scripts.Script):
                 negativePrompt = createNegative(
                     styles[i] if randomizeEach or allstyles else styles[0], prompt)
                 p.all_negative_prompts[i] = negativePrompt
-
+        if not p.enable_hr:
+           pass
+        else:
+            p.all_hr_prompts = p.all_prompts
+            p.all_hr_negative_prompts = p.all_negative_prompts        
         p.extra_generation_params["Style Selector Enabled"] = True
         p.extra_generation_params["Style Selector Randomize"] = randomize
         p.extra_generation_params["Style Selector Style"] = style
 
+
+       
     def after_component(self, component, **kwargs):
         # https://github.com/AUTOMATIC1111/stable-diffusion-webui/pull/7456#issuecomment-1414465888 helpfull link
         # Find the text2img textbox component
