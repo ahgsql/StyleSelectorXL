@@ -120,6 +120,7 @@ class StyleSelectorXL(scripts.Script):
 
     def ui(self, is_img2img):
         enabled = getattr(shared.opts, "enable_styleselector_by_default", True)
+        self.use_same_style_for_each_batch = getattr(shared.opts, "use_same_style_for_each_batch", True)
         with gr.Group():
             with gr.Accordion("SDXL Styles", open=enabled):
                 with FormRow():
@@ -135,8 +136,11 @@ class StyleSelectorXL(scripts.Script):
 
                 with FormRow():
                     with FormColumn(min_width=160):
+                        info_batch = " Each batch (batch size) will have the same style"
+                        if not self.use_same_style_for_each_batch:
+                            info_batch = ""
                         allstyles = gr.Checkbox(
-                            value=False, label="Generate All Styles In Order", info="To Generate Your Prompt in All Available Styles, Its Better to set batch count to " + str(len(self.styleNames)) + " ( Style Count)")
+                            value=False, label="Generate All Styles In Order", info=f"To Generate Your Prompt in All Available Styles, set batch count to {len(self.styleNames)} (Style Count). {info_batch}")
 
                 style_ui_type = shared.opts.data.get(
                     "styles_ui",  "radio-buttons")
@@ -155,10 +159,12 @@ class StyleSelectorXL(scripts.Script):
     def process(self, p, is_enabled, randomize, randomizeEach, allstyles,  style):
         if not is_enabled:
             return
-
+        
         if randomize:
             style = random.choice(self.styleNames)
-        batchCount = len(p.all_prompts)
+            
+        batchCount = p.n_iter
+        batchSize = p.batch_size
 
         if(batchCount == 1):
             # for each image in batch
@@ -169,23 +175,44 @@ class StyleSelectorXL(scripts.Script):
                 negativePrompt = createNegative(style, prompt)
                 p.all_negative_prompts[i] = negativePrompt
         if(batchCount > 1):
-            styles = {}
-            for i, prompt in enumerate(p.all_prompts):
-                if(randomize):
-                    styles[i] = random.choice(self.styleNames)
-                else:
-                    styles[i] = style
-                if(allstyles):
-                    styles[i] = self.styleNames[i % len(self.styleNames)]
-            # for each image in batch
-            for i, prompt in enumerate(p.all_prompts):
-                positivePrompt = createPositive(
-                    styles[i] if randomizeEach or allstyles else styles[0], prompt)
-                p.all_prompts[i] = positivePrompt
-            for i, prompt in enumerate(p.all_negative_prompts):
-                negativePrompt = createNegative(
-                    styles[i] if randomizeEach or allstyles else styles[0], prompt)
-                p.all_negative_prompts[i] = negativePrompt
+
+            if randomizeEach:
+                for i, prompt in enumerate(p.all_prompts):
+                    styleName = random.choice(self.styleNames)
+                    p.all_prompts[i] = createPositive(styleName, prompt)
+                    p.all_negative_prompts[i] = createNegative(
+                        styleName, p.all_negative_prompts[i])
+                    
+            elif randomize:
+                styleName = random.choice(self.styleNames)
+                for i, prompt in enumerate(p.all_prompts):
+                    p.all_prompts[i] = createPositive(styleName, prompt)
+                    p.all_negative_prompts[i] = createNegative(
+                        style, p.all_negative_prompts[i])
+                    
+            elif allstyles:
+                counter = 0
+                for i in range(0, len(p.all_prompts), batchSize if self.use_same_style_for_each_batch else 1):
+                    # make sure to not go out of bounds
+                    if counter >= len(self.styleNames):
+                        counter = 0
+                    styleName = self.styleNames[counter]
+                    if self.use_same_style_for_each_batch:
+                        for j in range(batchSize):
+                                if i + j < len(p.all_prompts):
+                                    p.all_prompts[i + j] = createPositive(styleName, p.all_prompts[i + j])
+                                    p.all_negative_prompts[i + j] = createNegative(styleName, p.all_negative_prompts[i + j])
+                    else:
+                        p.all_prompts[i] = createPositive(styleName, p.all_prompts[i])
+                        p.all_negative_prompts[i] = createNegative(styleName, p.all_negative_prompts[i])
+
+                    counter += 1
+
+            else:
+                for i, prompt in enumerate(p.all_prompts):
+                    p.all_prompts[i] = createPositive(style, prompt)
+                    p.all_negative_prompts[i] = createNegative(
+                        style, p.all_negative_prompts[i])
 
         p.extra_generation_params["Style Selector Enabled"] = True
         p.extra_generation_params["Style Selector Randomize"] = randomize
@@ -219,6 +246,16 @@ def on_ui_settings():
         shared.OptionInfo(
             True,
             "enable Style Selector by default",
+            gr.Checkbox,
+            section=section
+            )
+    )
+
+    shared.opts.add_option(
+        "use_same_style_for_each_batch",
+        shared.OptionInfo(
+            True,
+            "use the same style for each batch",
             gr.Checkbox,
             section=section
             )
