@@ -1,4 +1,5 @@
 ## Style Selector for SDXL 1.0
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/ahgsql)
 
 This repository contains a Automatic1111 Extension allows users to select and apply different styles to their inputs using SDXL 1.0.
 
