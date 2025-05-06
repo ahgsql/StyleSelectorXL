@@ -190,8 +190,8 @@
     "negative_prompt": "smooth, realistic, detailed, photorealistic, noise, blurry, deformed"
   },
   {
-    "name": "Pokémon",
-    "prompt": "Pokémon style {prompt} . Vibrant, cute, anime, fantasy, reminiscent of Pokémon series",
+    "name": "Pok\u00e9mon",
+    "prompt": "Pok\u00e9mon style {prompt} . Vibrant, cute, anime, fantasy, reminiscent of Pok\u00e9mon series",
     "negative_prompt": "realistic, modern, horror, dystopian, violent"
   },
   {
@@ -383,5 +383,880 @@
     "name": "Tilt-Shift",
     "prompt": "Tilt-shift photo of {prompt} . Selective focus, miniature effect, blurred background, highly detailed, vibrant, perspective control",
     "negative_prompt": "blurry, noisy, deformed, flat, low contrast, unrealistic, oversaturated, underexposed"
+  },
+  {
+    "name": "Medieval Manuscript",
+    "prompt": "Medieval manuscript illustration of {prompt}, hand-drawn, illuminated lettering, rich colors",
+    "negative_prompt": "modern, digital, photorealistic"
+  },
+  {
+    "name": "Mecha Concept Art",
+    "prompt": "Mecha concept art featuring {prompt}, intricate mechanical details, cybernetic design, futuristic",
+    "negative_prompt": "organic, simplistic, outdated"
+  },
+  {
+    "name": "Metal Engraving",
+    "prompt": "Metal engraving of {prompt}, detailed etching, fine lines, intricate texture",
+    "negative_prompt": "soft, painterly, digital-looking"
+  },
+  {
+    "name": "Micro Photography",
+    "prompt": "Microscopic photograph of {prompt}, highly detailed, scientific precision, extreme close-up",
+    "negative_prompt": "distant, blurry, stylized"
+  },
+  {
+    "name": "Minimalist Line Art",
+    "prompt": "Minimalist line art of {prompt}, simple, elegant lines, monochrome, contemporary aesthetic",
+    "negative_prompt": "detailed, colorful, messy"
+  },
+  {
+    "name": "Monochrome Noir",
+    "prompt": "Monochrome noir scene of {prompt}, deep shadows, high contrast, vintage crime aesthetic",
+    "negative_prompt": "colorful, soft, cheerful"
+  },
+  {
+    "name": "Mosaic Tile Art",
+    "prompt": "Mosaic tile pattern of {prompt}, intricate geometric designs, vibrant colors, decorative",
+    "negative_prompt": "smooth, blended, painterly"
+  },
+  {
+    "name": "Mythological Painting",
+    "prompt": "Mythological painting of {prompt}, grand composition, rich details, dramatic storytelling",
+    "negative_prompt": "flat, simplistic, cartoonish"
+  },
+  {
+    "name": "Neon Cyberpunk",
+    "prompt": "Neon cyberpunk cityscape featuring {prompt}, glowing lights, futuristic, high-tech aesthetics",
+    "negative_prompt": "rustic, natural, low contrast"
+  },
+  {
+    "name": "Neo-Victorian Steampunk",
+    "prompt": "Neo-Victorian steampunk scene of {prompt}, intricate brass mechanics, retro-futuristic fashion",
+    "negative_prompt": "minimalist, modern, flat"
+  },
+  {
+    "name": "Oil Pastel Sketch",
+    "prompt": "Oil pastel sketch of {prompt}, textured strokes, rich color blending, expressive technique",
+    "negative_prompt": "digital, sharp, vector-like"
+  },
+  {
+    "name": "Optical Illusion",
+    "prompt": "Optical illusion artwork of {prompt}, mind-bending geometry, Escher-inspired, impossible perspectives",
+    "negative_prompt": "realistic, simple, straightforward"
+  },
+  {
+    "name": "Origami Paper Craft",
+    "prompt": "Origami paper sculpture of {prompt}, crisp folds, geometric precision, delicate structure",
+    "negative_prompt": "soft, fluid, organic"
+  },
+  {
+    "name": "Pixel Art",
+    "prompt": "Pixel art rendering of {prompt}, retro game aesthetic, blocky pixels, vibrant colors",
+    "negative_prompt": "highly detailed, smooth, painterly"
+  },
+  {
+    "name": "Psychedelic Pop Art",
+    "prompt": "Psychedelic pop art of {prompt}, surreal, neon colors, warped proportions, intense patterns",
+    "negative_prompt": "dull, muted, lifeless"
+  },
+  {
+    "name": "Quantum Sci-Fi",
+    "prompt": "Quantum sci-fi visualization of {prompt}, abstract energy waves, subatomic structures, futuristic",
+    "negative_prompt": "medieval, rustic, analog"
+  },
+  {
+    "name": "Retro Futurism",
+    "prompt": "Retro futurism aesthetic of {prompt}, mid-century sci-fi, bold color palettes, vintage space-age style",
+    "negative_prompt": "modern, contemporary, dull"
+  },
+  {
+    "name": "Roman Mosaics",
+    "prompt": "Ancient Roman mosaic of {prompt}, tessellated stone, earthy tones, historical accuracy",
+    "negative_prompt": "modern, smooth, digital"
+  },
+  {
+    "name": "Rough Charcoal Sketch",
+    "prompt": "Rough charcoal sketch of {prompt}, high contrast, expressive strokes, dramatic shading",
+    "negative_prompt": "polished, smooth, colorful"
+  },
+  {
+    "name": "Sci-Fi Landscape",
+    "prompt": "Sci-fi landscape of {prompt}, alien planets, dramatic lighting, exotic terrains",
+    "negative_prompt": "earthly, ordinary, low contrast"
+  },
+  {
+    "name": "Shadow Puppet Silhouette",
+    "prompt": "Shadow puppet silhouette of {prompt}, high contrast, traditional cut-out aesthetic, strong black forms",
+    "negative_prompt": "detailed, colorful, painterly"
+  },
+  {
+    "name": "Solarized Photography",
+    "prompt": "Solarized photograph of {prompt}, high-contrast inversion, striking surreal effect",
+    "negative_prompt": "normal lighting, flat colors, dull"
+  },
+  {
+    "name": "Star Chart Map",
+    "prompt": "Celestial star chart featuring {prompt}, constellations, deep space aesthetics, cosmic wonder",
+    "negative_prompt": "simple, unscientific, blurry"
+  },
+  {
+    "name": "Steampunk Blueprint",
+    "prompt": "Steampunk blueprint of {prompt}, intricate mechanical sketches, vintage parchment texture, detailed schematics",
+    "negative_prompt": "modern, minimal, lifeless"
+  },
+  {
+    "name": "Storybook Illustration",
+    "prompt": "Storybook illustration of {prompt}, whimsical, soft color palettes, painterly textures",
+    "negative_prompt": "harsh lines, digital, dark"
+  },
+  {
+    "name": "Tattoo Flash Art",
+    "prompt": "Tattoo flash art of {prompt}, bold outlines, high contrast, traditional tattoo motifs",
+    "negative_prompt": "realistic, complex, muddy colors"
+  },
+  {
+    "name": "Technicolor Fantasy",
+    "prompt": "Technicolor fantasy scene of {prompt}, exaggerated colors, surreal glow, dreamlike lighting",
+    "negative_prompt": "muted, dull, uninspired"
+  },
+  {
+    "name": "Torn Paper Collage",
+    "prompt": "Torn paper collage of {prompt}, layered textures, rough edges, mixed media aesthetics",
+    "negative_prompt": "smooth, refined, polished"
+  },
+  {
+    "name": "Traditional Watercolor",
+    "prompt": "Traditional watercolor painting of {prompt}, soft edges, gentle gradients, organic flow",
+    "negative_prompt": "sharp, digital, unnatural"
+  },
+  {
+    "name": "Tribal Tattoo",
+    "prompt": "Tribal tattoo design of {prompt}, bold black shapes, geometric symmetry, cultural patterns",
+    "negative_prompt": "delicate, colorful, over-detailed"
+  },
+  {
+    "name": "Underwater Fantasy",
+    "prompt": "Underwater fantasy setting featuring {prompt}, glowing corals, deep ocean mystique, ethereal marine life",
+    "negative_prompt": "dry, land-based, mundane"
+  },
+  {
+    "name": "Urban Graffiti",
+    "prompt": "Urban graffiti artwork of {prompt}, spray paint aesthetics, bold lettering, street art vibrancy",
+    "negative_prompt": "clean, precise, classical"
+  },
+  {
+    "name": "Utopian Sci-Fi",
+    "prompt": "Utopian sci-fi city featuring {prompt}, sleek architecture, glowing skyline, advanced technology",
+    "negative_prompt": "dystopian, ruined, outdated"
+  },
+  {
+    "name": "VHS Glitch Aesthetic",
+    "prompt": "VHS glitch aesthetic of {prompt}, distorted visuals, analog static, cyberpunk retro style",
+    "negative_prompt": "clean, modern, digital clarity"
+  },
+  {
+    "name": "Vibrant Street Photography",
+    "prompt": "Vibrant street photography capturing {prompt}, dynamic energy, bold colors, real-world textures",
+    "negative_prompt": "blurry, muted, staged"
+  },
+  {
+    "name": "Victorian Portrait",
+    "prompt": "Victorian portrait of {prompt}, elegant, oil-painted, antique atmosphere, rich detailing",
+    "negative_prompt": "modern, casual, washed-out"
+  },
+  {
+    "name": "Vinyl Album Cover",
+    "prompt": "Vinyl album cover featuring {prompt}, bold typography, artistic composition, nostalgic feel",
+    "negative_prompt": "plain, boring, generic"
+  },
+  {
+    "name": "Airbrush Art",
+    "prompt": "Airbrush art style of {prompt}, smooth gradients, vibrant colors, hyper-detailed, soft shading",
+    "negative_prompt": "harsh lines, rough, low detail, pixelated"
+  },
+  {
+    "name": "Ancient Fresco",
+    "prompt": "Ancient fresco painting of {prompt}, aged texture, muted colors, classical composition",
+    "negative_prompt": "modern, digital, hyper-detailed, photorealistic"
+  },
+  {
+    "name": "Anime Chibi",
+    "prompt": "Chibi anime style of {prompt}, exaggerated proportions, big eyes, cute expressions, vibrant colors",
+    "negative_prompt": "realistic, detailed anatomy, horror, grotesque"
+  },
+  {
+    "name": "Apocalyptic Ruins",
+    "prompt": "Post-apocalyptic ruins of {prompt}, desolate, overgrown, abandoned, dramatic lighting",
+    "negative_prompt": "clean, futuristic, new, untouched"
+  },
+  {
+    "name": "Astronomical Illustration",
+    "prompt": "Astronomical illustration of {prompt}, deep space, celestial bodies, scientific accuracy, stunning nebulae",
+    "negative_prompt": "cartoonish, unrealistic, low detail"
+  },
+  {
+    "name": "Aztec Codex",
+    "prompt": "Aztec codex style illustration of {prompt}, vibrant pigments, stylized figures, ancient symbols",
+    "negative_prompt": "modern, photorealistic, oil painting"
+  },
+  {
+    "name": "Bioluminescent Dreamscape",
+    "prompt": "Bioluminescent dreamscape featuring {prompt}, glowing flora, surreal, neon colors, fantastical ambiance",
+    "negative_prompt": "dull, mundane, washed-out, monotone"
+  },
+  {
+    "name": "Blacklight Poster",
+    "prompt": "Blacklight poster of {prompt}, neon colors, high contrast, psychedelic patterns, glowing effect",
+    "negative_prompt": "low contrast, dull, realistic, washed-out"
+  },
+  {
+    "name": "Book Cover Fantasy",
+    "prompt": "Fantasy book cover of {prompt}, epic scene, dramatic lighting, enchanting atmosphere",
+    "negative_prompt": "blurry, poorly composed, flat, uninteresting"
+  },
+  {
+    "name": "Cave Painting",
+    "prompt": "Ancient cave painting of {prompt}, earthy tones, primitive figures, rough textures, prehistoric aesthetic",
+    "negative_prompt": "modern, sleek, digital, futuristic"
+  },
+  {
+    "name": "CGI Photorealism",
+    "prompt": "CGI photorealistic render of {prompt}, hyper-detailed, ultra-sharp textures, cinematic realism",
+    "negative_prompt": "cartoonish, simplistic, low resolution, rough"
+  },
+  {
+    "name": "Chinese Ink Painting",
+    "prompt": "Traditional Chinese ink painting of {prompt}, soft brushwork, elegant composition, monochrome with delicate color accents",
+    "negative_prompt": "digital, photorealistic, harsh colors"
+  },
+  {
+    "name": "Circuit Board Art",
+    "prompt": "Circuit board pattern of {prompt}, intricate technology, cybernetic, neon accents",
+    "negative_prompt": "organic, low detail, soft, abstract"
+  },
+  {
+    "name": "Color Pencil Sketch",
+    "prompt": "Color pencil sketch of {prompt}, hand-drawn, subtle shading, textured strokes",
+    "negative_prompt": "harsh, digital, heavily processed, blurry"
+  },
+  {
+    "name": "Comic Noir",
+    "prompt": "Comic noir scene of {prompt}, high contrast, dramatic lighting, gritty urban aesthetic",
+    "negative_prompt": "colorful, cheerful, soft, fantasy"
+  },
+  {
+    "name": "Cyber Samurai",
+    "prompt": "Cyber samurai warrior {prompt}, futuristic armor, neon accents, Japanese aesthetics, sci-fi cyberpunk fusion",
+    "negative_prompt": "medieval, rustic, ancient, dull"
+  },
+  {
+    "name": "Digital Surrealism",
+    "prompt": "Surreal digital artwork of {prompt}, dreamlike, impossible landscapes, symbolic elements",
+    "negative_prompt": "realistic, logical, uncreative"
+  },
+  {
+    "name": "Egyptian Hieroglyphic",
+    "prompt": "Egyptian hieroglyphic depiction of {prompt}, ancient symbols, stylized figures, stone-carved aesthetic",
+    "negative_prompt": "modern, photorealistic, 3D render"
+  },
+  {
+    "name": "Ethereal Fantasy",
+    "prompt": "Ethereal fantasy scene featuring {prompt}, soft glowing lights, otherworldly atmosphere, dreamlike ambiance",
+    "negative_prompt": "harsh, realistic, mechanical"
+  },
+  {
+    "name": "Faux Stained Glass",
+    "prompt": "Stained glass style depiction of {prompt}, bold outlines, vivid colors, luminous effect",
+    "negative_prompt": "dull, low contrast, chaotic composition"
+  },
+  {
+    "name": "Film Noir Poster",
+    "prompt": "Film noir poster featuring {prompt}, shadowy figures, high contrast, vintage Hollywood aesthetic",
+    "negative_prompt": "bright, colorful, modern"
+  },
+  {
+    "name": "Flat Vector Illustration",
+    "prompt": "Flat vector illustration of {prompt}, minimalist, clean lines, solid colors, smooth gradients",
+    "negative_prompt": "textured, detailed, photorealistic"
+  },
+  {
+    "name": "Folk Art",
+    "prompt": "Folk art depiction of {prompt}, hand-painted, bright colors, decorative patterns, cultural motifs",
+    "negative_prompt": "highly detailed, photorealistic, modern"
+  },
+  {
+    "name": "Futuristic UI Design",
+    "prompt": "Futuristic UI design featuring {prompt}, sleek holograms, neon accents, cyber interface",
+    "negative_prompt": "rustic, old-fashioned, organic"
+  },
+  {
+    "name": "Ghostly Apparition",
+    "prompt": "Ghostly apparition of {prompt}, translucent, glowing, ethereal mist, supernatural atmosphere",
+    "negative_prompt": "solid, lifelike, cheerful, bright"
+  },
+  {
+    "name": "Gothic Horror",
+    "prompt": "Gothic horror depiction of {prompt}, dark and moody, eerie lighting, haunting details",
+    "negative_prompt": "bright, cheerful, cartoonish"
+  },
+  {
+    "name": "Glitch Art",
+    "prompt": "Glitch art depiction of {prompt}, distorted visuals, pixel sorting, cyber aesthetic",
+    "negative_prompt": "clean, smooth, photorealistic"
+  },
+  {
+    "name": "Holographic Vision",
+    "prompt": "Holographic projection of {prompt}, shimmering light, futuristic display, glowing particles",
+    "negative_prompt": "flat, matte, old-fashioned"
+  },
+  {
+    "name": "Low Poly 3D",
+    "prompt": "Low poly 3D model of {prompt}, minimal detail, geometric shapes, smooth shading",
+    "negative_prompt": "high detail, complex, realistic textures"
+  },
+  {
+    "name": "Manga Cover Art",
+    "prompt": "Manga cover illustration of {prompt}, dynamic composition, bold linework, vibrant shading",
+    "negative_prompt": "realistic, western-style, dull"
+  },
+  {
+    "name": "80s Retro Wave",
+    "prompt": "80s retro wave aesthetic of {prompt}, neon lights, synthwave vibes, futuristic nostalgia",
+    "negative_prompt": "dull, modern, muted colors"
+  },
+  {
+    "name": "Ancient Cave Paintings",
+    "prompt": "Ancient cave painting of {prompt}, earthy tones, primitive brush strokes, historical",
+    "negative_prompt": "modern, digital, polished"
+  },
+  {
+    "name": "Anime Cyber Mecha",
+    "prompt": "Anime-style cyber mecha illustration of {prompt}, futuristic mechs, vibrant colors, dynamic action",
+    "negative_prompt": "realistic, dull, medieval"
+  },
+  {
+    "name": "Astronomical Diagram",
+    "prompt": "Astronomical diagram featuring {prompt}, scientific accuracy, star charts, cosmic elegance",
+    "negative_prompt": "cartoonish, imprecise, abstract"
+  },
+  {
+    "name": "Augmented Reality UI",
+    "prompt": "Augmented reality UI concept for {prompt}, holographic display, high-tech interface, futuristic design",
+    "negative_prompt": "retro, outdated, hand-drawn"
+  },
+  {
+    "name": "Baroque Architecture",
+    "prompt": "Baroque architectural illustration of {prompt}, ornate details, golden embellishments, classical style",
+    "negative_prompt": "minimalist, modern, plain"
+  },
+  {
+    "name": "Biomechanical Surrealism",
+    "prompt": "Biomechanical surrealism featuring {prompt}, H.R. Giger-inspired, intricate organic-mechanical fusion",
+    "negative_prompt": "flat, cartoony, simplistic"
+  },
+  {
+    "name": "Blueprint Schematic",
+    "prompt": "Blueprint schematic of {prompt}, detailed technical drawing, precise measurements, industrial aesthetic",
+    "negative_prompt": "painterly, colorful, impressionistic"
+  },
+  {
+    "name": "Celestial Mythology",
+    "prompt": "Celestial mythology artwork of {prompt}, constellations, divine beings, cosmic storytelling",
+    "negative_prompt": "mundane, lifeless, earthly"
+  },
+  {
+    "name": "Chiaroscuro Portrait",
+    "prompt": "Chiaroscuro portrait of {prompt}, deep shadows, dramatic lighting, Rembrandt-style contrast",
+    "negative_prompt": "flat lighting, washed-out, overexposed"
+  },
+  {
+    "name": "Classic Pin-Up",
+    "prompt": "Classic pin-up illustration of {prompt}, vintage 1950s style, bold lines, glamorous aesthetic",
+    "negative_prompt": "realistic, muted, casual"
+  },
+  {
+    "name": "Comic Book Noir",
+    "prompt": "Comic book noir artwork of {prompt}, high contrast, shadowy scenes, detective aesthetics",
+    "negative_prompt": "bright, cheerful, soft"
+  },
+  {
+    "name": "Crystal Fantasy",
+    "prompt": "Crystal fantasy scene featuring {prompt}, glowing gemstones, magical formations, ethereal glow",
+    "negative_prompt": "dull, opaque, lifeless"
+  },
+  {
+    "name": "Deep Sea Abyss",
+    "prompt": "Deep sea abyss environment of {prompt}, bioluminescent creatures, eerie atmosphere, mysterious depths",
+    "negative_prompt": "bright, land-based, conventional"
+  },
+  {
+    "name": "Dieselpunk Warfare",
+    "prompt": "Dieselpunk warfare scene of {prompt}, rugged machinery, industrialized battlefields, vintage tech",
+    "negative_prompt": "modern, clean, futuristic"
+  },
+  {
+    "name": "Digital Hologram",
+    "prompt": "Digital hologram display of {prompt}, neon glow, transparent layering, sci-fi aesthetics",
+    "negative_prompt": "solid, physical, traditional"
+  },
+  {
+    "name": "Dreamlike Impressionism",
+    "prompt": "Dreamlike impressionist painting of {prompt}, soft brushwork, pastel colors, ethereal ambiance",
+    "negative_prompt": "sharp, harsh lines, photorealistic"
+  },
+  {
+    "name": "Enchanted Forest",
+    "prompt": "Enchanted forest landscape of {prompt}, glowing mushrooms, ancient trees, mystical fog",
+    "negative_prompt": "urban, dry, dull"
+  },
+  {
+    "name": "Ethereal Angelic Vision",
+    "prompt": "Ethereal angelic vision of {prompt}, divine radiance, soft golden light, celestial beauty",
+    "negative_prompt": "dark, grunge, horror"
+  },
+  {
+    "name": "Futuristic Sports Design",
+    "prompt": "Futuristic sportswear concept of {prompt}, aerodynamic, sleek materials, sci-fi aesthetic",
+    "negative_prompt": "traditional, outdated, bulky"
+  },
+  {
+    "name": "Galactic Battlefield",
+    "prompt": "Galactic battlefield of {prompt}, space fleets, epic interstellar warfare, nebula explosions",
+    "negative_prompt": "earthbound, peaceful, empty"
+  },
+  {
+    "name": "Ghostly Apparition",
+    "prompt": "Ghostly apparition of {prompt}, translucent figures, misty glow, eerie ethereal presence",
+    "negative_prompt": "solid, warm, lively"
+  },
+  {
+    "name": "Glitch Art Distortion",
+    "prompt": "Glitch art distortion of {prompt}, digital artifacts, pixel corruption, cyberpunk aesthetics",
+    "negative_prompt": "smooth, polished, traditional"
+  },
+  {
+    "name": "Golden Age Hollywood",
+    "prompt": "Golden Age Hollywood portrait of {prompt}, glamorous lighting, vintage film star elegance",
+    "negative_prompt": "casual, unpolished, modern"
+  },
+  {
+    "name": "Gothic Horror Illustration",
+    "prompt": "Gothic horror illustration of {prompt}, dark castles, eerie fog, vintage horror aesthetics",
+    "negative_prompt": "bright, cheerful, modern"
+  },
+  {
+    "name": "High-Tech Circuitry",
+    "prompt": "High-tech circuitry design of {prompt}, neon glow, intricate microchip patterns, futuristic energy",
+    "negative_prompt": "organic, rustic, hand-drawn"
+  },
+  {
+    "name": "Hyperdimensional Fractals",
+    "prompt": "Hyperdimensional fractal pattern featuring {prompt}, infinite geometric complexity, neon colors",
+    "negative_prompt": "simple, plain, lifeless"
+  },
+  {
+    "name": "Industrial Cyberpunk",
+    "prompt": "Industrial cyberpunk environment of {prompt}, neon-lit factories, grungy dystopian settings",
+    "negative_prompt": "clean, pastoral, bright"
+  },
+  {
+    "name": "Lava Flow Aesthetic",
+    "prompt": "Lava flow aesthetic featuring {prompt}, molten fire, volcanic textures, glowing red intensity",
+    "negative_prompt": "cold, soft, pastel"
+  },
+  {
+    "name": "Magical Alchemy",
+    "prompt": "Magical alchemy scene of {prompt}, bubbling potions, glowing runes, mystical laboratory",
+    "negative_prompt": "scientific, mundane, dull"
+  },
+  {
+    "name": "Marble Sculpture",
+    "prompt": "Marble sculpture of {prompt}, smooth stone texture, classical Greek or Roman style, intricate carving",
+    "negative_prompt": "soft, colorful, painted"
+  },
+  {
+    "name": "Mystical Tarot Card",
+    "prompt": "Mystical tarot card featuring {prompt}, ornate borders, symbolic elements, fortune-telling aesthetic",
+    "negative_prompt": "plain, digital, minimal"
+  },
+  {
+    "name": "Mythological Japanese Ukiyo-e",
+    "prompt": "Mythological Japanese Ukiyo-e illustration of {prompt}, intricate linework, historical themes, stylized waves",
+    "negative_prompt": "modern, western, realistic"
+  },
+  {
+    "name": "Prismatic Refraction",
+    "prompt": "Prismatic refraction effect of {prompt}, iridescent colors, light-bending optics, crystal-like glow",
+    "negative_prompt": "flat, monochrome, dull"
+  },
+  {
+    "name": "Space Opera Grand Scene",
+    "prompt": "Space opera grand scene featuring {prompt}, epic cosmic battles, interstellar adventure, celestial grandeur",
+    "negative_prompt": "small scale, static, mundane"
+  },
+  {
+    "name": "Abstract Watercolor",
+    "prompt": "Abstract watercolor painting of {prompt}, fluid brush strokes, vibrant color splashes, dreamy aesthetic",
+    "negative_prompt": "sharp, rigid, digital"
+  },
+  {
+    "name": "AI-Generated Futurism",
+    "prompt": "AI-generated futuristic vision of {prompt}, hyper-detailed, cybernetic enhancements, digital aesthetic",
+    "negative_prompt": "organic, rustic, low-tech"
+  },
+  {
+    "name": "Alien Biome",
+    "prompt": "Alien biome landscape featuring {prompt}, exotic flora and fauna, glowing ecosystems, surreal atmosphere",
+    "negative_prompt": "earthly, familiar, human-made"
+  },
+  {
+    "name": "Ancient Egyptian Relief",
+    "prompt": "Ancient Egyptian relief carving of {prompt}, stone hieroglyphics, historic details, temple aesthetic",
+    "negative_prompt": "modern, smooth, painted"
+  },
+  {
+    "name": "Apocalyptic Ruins",
+    "prompt": "Apocalyptic ruins of {prompt}, crumbling cities, overgrown vegetation, eerie abandoned atmosphere",
+    "negative_prompt": "clean, new, well-maintained"
+  },
+  {
+    "name": "Arcane Spellbook",
+    "prompt": "Arcane spellbook illustration of {prompt}, mystical symbols, glowing runes, aged parchment",
+    "negative_prompt": "plain, modern, empty"
+  },
+  {
+    "name": "Art Deco Glamour",
+    "prompt": "Art Deco glamour portrait of {prompt}, geometric elegance, gold accents, vintage luxury",
+    "negative_prompt": "messy, grunge, asymmetrical"
+  },
+  {
+    "name": "Astronaut Surrealism",
+    "prompt": "Astronaut surrealism featuring {prompt}, cosmic elements, dreamlike space scenes, otherworldly",
+    "negative_prompt": "mundane, realistic, earthly"
+  },
+  {
+    "name": "Bioluminescent Forest",
+    "prompt": "Bioluminescent forest with {prompt}, glowing plants, soft neon lighting, magical night atmosphere",
+    "negative_prompt": "dull, bright daylight, artificial"
+  },
+  {
+    "name": "Blade Runner Aesthetic",
+    "prompt": "Blade Runner-inspired cityscape of {prompt}, neon-drenched cyberpunk, rain-soaked streets, futuristic noir",
+    "negative_prompt": "rural, historical, pastel"
+  },
+  {
+    "name": "Cel-Shaded Comic",
+    "prompt": "Cel-shaded comic-style illustration of {prompt}, bold outlines, high contrast colors, animated feel",
+    "negative_prompt": "soft, photorealistic, painterly"
+  },
+  {
+    "name": "Crystal Spires",
+    "prompt": "Crystal spires landscape featuring {prompt}, towering gemstone formations, magical reflections, fantasy scenery",
+    "negative_prompt": "flat, dull, opaque"
+  },
+  {
+    "name": "Cybernetic Samurai",
+    "prompt": "Cybernetic samurai warrior featuring {prompt}, neon accents, futuristic armor, high-tech weaponry",
+    "negative_prompt": "traditional, low-tech, medieval"
+  },
+  {
+    "name": "Dark Fantasy Horror",
+    "prompt": "Dark fantasy horror scene of {prompt}, eerie shadows, gothic atmosphere, supernatural presence",
+    "negative_prompt": "bright, cheerful, colorful"
+  },
+  {
+    "name": "Digital Mandala",
+    "prompt": "Digital mandala pattern of {prompt}, intricate symmetrical design, neon glow, kaleidoscopic",
+    "negative_prompt": "asymmetrical, plain, chaotic"
+  },
+  {
+    "name": "Dystopian Industrial",
+    "prompt": "Dystopian industrial cityscape of {prompt}, pollution, towering factories, oppressive atmosphere",
+    "negative_prompt": "greenery, bright, utopian"
+  },
+  {
+    "name": "Egyptian Futurism",
+    "prompt": "Egyptian futurism concept of {prompt}, ancient mythology blended with sci-fi aesthetics, cyber-pharaohs",
+    "negative_prompt": "historically accurate, dull, rustic"
+  },
+  {
+    "name": "Eldritch Horror",
+    "prompt": "Eldritch horror scene of {prompt}, cosmic dread, tentacled monstrosities, unknowable terror",
+    "negative_prompt": "ordinary, cute, familiar"
+  },
+  {
+    "name": "Enchanted Ice Palace",
+    "prompt": "Enchanted ice palace featuring {prompt}, crystalline architecture, glacial blues, frozen magic",
+    "negative_prompt": "warm, rustic, tropical"
+  },
+  {
+    "name": "Fantasy Steampunk",
+    "prompt": "Fantasy steampunk city of {prompt}, intricate brass machinery, airships, Victorian fashion",
+    "negative_prompt": "modern, futuristic, digital"
+  },
+  {
+    "name": "Galactic Nebula Vision",
+    "prompt": "Galactic nebula vision of {prompt}, swirling cosmic gases, vibrant space colors, celestial beauty",
+    "negative_prompt": "monochrome, flat, earthly"
+  },
+  {
+    "name": "Glowing Cyber Runes",
+    "prompt": "Glowing cyber runes inscribed with {prompt}, neon-lit symbols, digital mysticism, futuristic magic",
+    "negative_prompt": "faded, old, medieval"
+  },
+  {
+    "name": "Gothic Church Stained Glass",
+    "prompt": "Gothic church stained glass artwork of {prompt}, intricate colorful designs, sacred atmosphere",
+    "negative_prompt": "monotone, rough, low-detail"
+  },
+  {
+    "name": "Holographic Projection",
+    "prompt": "Holographic projection of {prompt}, shimmering transparent display, sci-fi aesthetic",
+    "negative_prompt": "solid, painted, aged"
+  },
+  {
+    "name": "Hyperrealistic Sci-Fi City",
+    "prompt": "Hyperrealistic sci-fi cityscape of {prompt}, sleek futuristic structures, ultra-detailed lighting",
+    "negative_prompt": "simplistic, outdated, dull"
+  },
+  {
+    "name": "Ice and Fire Contrasts",
+    "prompt": "Ice and fire contrasts in {prompt}, glowing embers meeting icy frost, elemental battle",
+    "negative_prompt": "neutral, muted, lifeless"
+  },
+  {
+    "name": "Lost Atlantis",
+    "prompt": "Lost Atlantis ruins of {prompt}, sunken city, overgrown coral, mysterious ancient structures",
+    "negative_prompt": "desert, urban, modern"
+  },
+  {
+    "name": "Minimalist Vaporwave",
+    "prompt": "Minimalist vaporwave design of {prompt}, pastel gradients, retro 80s aesthetic, synthwave elements",
+    "negative_prompt": "detailed, high contrast, realistic"
+  },
+  {
+    "name": "Nebula Dragon",
+    "prompt": "Nebula dragon featuring {prompt}, cosmic creature, swirling galaxy skin, ethereal wings",
+    "negative_prompt": "mundane, earthly, static"
+  },
+  {
+    "name": "Neon Samurai",
+    "prompt": "Neon samurai warrior with {prompt}, glowing katana, cyberpunk city backdrop, futuristic armor",
+    "negative_prompt": "historical, dull, rustic"
+  },
+  {
+    "name": "Post-Apocalyptic Scavenger",
+    "prompt": "Post-apocalyptic scavenger featuring {prompt}, makeshift armor, rugged survival gear, dystopian wasteland",
+    "negative_prompt": "clean, fresh, luxurious"
+  },
+  {
+    "name": "Psychadelic Swirls",
+    "prompt": "Psychedelic swirls featuring {prompt}, vibrant neon colors, mind-bending patterns, trippy aesthetic",
+    "negative_prompt": "bland, realistic, plain"
+  },
+  {
+    "name": "Silk Screen Pop Art",
+    "prompt": "Silk screen pop art of {prompt}, bold colors, sharp contrasts, Warhol-inspired retro style",
+    "negative_prompt": "dull, monochrome, subtle"
+  },
+  {
+    "name": "Steampunk Sky City",
+    "prompt": "Steampunk sky city of {prompt}, floating airships, brass gears, Victorian-era futuristic technology",
+    "negative_prompt": "modern, glass skyscrapers, dull"
+  },
+  {
+    "name": "Underwater Fantasy Realm",
+    "prompt": "Underwater fantasy realm featuring {prompt}, glowing coral cities, ethereal sea creatures, dreamlike",
+    "negative_prompt": "dry, urban, desert"
+  },
+  {
+    "name": "Algorithmic Fractals",
+    "prompt": "Algorithmic fractal representation of {prompt}, self-replicating patterns, intricate geometric structures, mathematical beauty",
+    "negative_prompt": "organic, simple, asymmetrical"
+  },
+  {
+    "name": "Algae-Punk Dystopia",
+    "prompt": "Algae-punk dystopia featuring {prompt}, bio-engineered structures, green-lit ambiance, moss-covered technology",
+    "negative_prompt": "clean, dry, high-tech metal"
+  },
+  {
+    "name": "Ancient Petrified Forest",
+    "prompt": "Ancient petrified forest with {prompt}, fossilized trees, cracked amber textures, eerie timeless atmosphere",
+    "negative_prompt": "lush, green, thriving"
+  },
+  {
+    "name": "Archaic Lithographs",
+    "prompt": "Archaic lithograph print of {prompt}, faded ink, stone-carved aesthetics, ancient documentation style",
+    "negative_prompt": "modern, digital, colorful"
+  },
+  {
+    "name": "Astrobiological Specimens",
+    "prompt": "Astrobiological specimen study of {prompt}, otherworldly anatomy, alien evolutionary structures, bioluminescent organics",
+    "negative_prompt": "earthly, human-like, mundane"
+  },
+  {
+    "name": "Atmospheric Fog Noir",
+    "prompt": "Atmospheric fog noir scene of {prompt}, shadowy silhouettes, heavy mist, cinematic drama",
+    "negative_prompt": "bright, colorful, cheerful"
+  },
+  {
+    "name": "Biomechanical Horror",
+    "prompt": "Biomechanical horror representation of {prompt}, sinewy metal tendrils, flesh-metal fusion, eerie cyber-organic aesthetic",
+    "negative_prompt": "soft, natural, welcoming"
+  },
+  {
+    "name": "Bismuth Crystal World",
+    "prompt": "Bismuth crystal world featuring {prompt}, metallic rainbow formations, geometric reflections, surreal structures",
+    "negative_prompt": "matte, smooth, organic"
+  },
+  {
+    "name": "Bubblegum Apocalypse",
+    "prompt": "Bubblegum apocalypse interpretation of {prompt}, post-apocalyptic ruins in vibrant pastel hues, pop art destruction",
+    "negative_prompt": "gritty, dark, realistic"
+  },
+  {
+    "name": "Chalkboard Schematic",
+    "prompt": "Chalkboard schematic of {prompt}, hand-drawn white chalk lines, deep black background, scientific aesthetic",
+    "negative_prompt": "colorful, clean, vectorized"
+  },
+  {
+    "name": "Circuitry Graffiti",
+    "prompt": "Circuitry graffiti representation of {prompt}, neon-sprayed electronic patterns, glitch art mixed with street aesthetics",
+    "negative_prompt": "traditional, organic, soft-edged"
+  },
+  {
+    "name": "Clockspring Metropolis",
+    "prompt": "Clockspring metropolis cityscape of {prompt}, interconnected clockwork gears, mechanical skyscrapers, steampunk timepieces",
+    "negative_prompt": "modern, minimalist, organic"
+  },
+  {
+    "name": "Coralpunk Utopia",
+    "prompt": "Coralpunk utopian society with {prompt}, submerged architectural wonders, iridescent marine biomes, aquatic neon glow",
+    "negative_prompt": "urban sprawl, lifeless, industrial"
+  },
+  {
+    "name": "Cracked Oil Painting",
+    "prompt": "Cracked oil painting of {prompt}, weathered paint textures, vintage renaissance style, aged aesthetic",
+    "negative_prompt": "smooth, modern, pristine"
+  },
+  {
+    "name": "Cryptic Cave Paintings",
+    "prompt": "Cryptic cave painting of {prompt}, ochre pigments, ancient tribal symbols, primitive artistic storytelling",
+    "negative_prompt": "modern, detailed, digital"
+  },
+  {
+    "name": "Dark Matter Phantasm",
+    "prompt": "Dark matter phantasm visualization of {prompt}, amorphous void tendrils, gravitational distortions, eerie cosmic energy",
+    "negative_prompt": "solid, well-lit, static"
+  },
+  {
+    "name": "Digital Veins",
+    "prompt": "Digital veins patterning {prompt}, intricate neon circuitry, pulsating electric energy, techno-biological fusion",
+    "negative_prompt": "smooth, plain, dull"
+  },
+  {
+    "name": "Drifting Junk Satellites",
+    "prompt": "Drifting junk satellites surrounding {prompt}, abandoned orbital debris, rusted space wreckage, low gravity shadows",
+    "negative_prompt": "clean, futuristic, sleek"
+  },
+  {
+    "name": "Druidic Glyphs",
+    "prompt": "Druidic glyphs forming {prompt}, mystical ancient runes, glowing inscriptions on stone, ethereal energy",
+    "negative_prompt": "modern, plain, artificial"
+  },
+  {
+    "name": "Ectoplasmic Vision",
+    "prompt": "Ectoplasmic vision of {prompt}, ghostly auras, semi-transparent energy flows, glowing spectral outlines",
+    "negative_prompt": "solid, mundane, non-spiritual"
+  },
+  {
+    "name": "Erosion Time-Lapse",
+    "prompt": "Erosion time-lapse effect on {prompt}, weathered surfaces, cracked textures, geological storytelling",
+    "negative_prompt": "pristine, smooth, untouched"
+  },
+  {
+    "name": "Everchanging Mosaic",
+    "prompt": "Everchanging mosaic of {prompt}, shifting tessellations, dynamic color blocks, kaleidoscopic motion",
+    "negative_prompt": "static, solid, non-patterned"
+  },
+  {
+    "name": "Ferrofluid Sculptures",
+    "prompt": "Ferrofluid sculptures shaping {prompt}, fluid magnetic spikes, metallic black reflections, dynamic motion",
+    "negative_prompt": "rigid, non-liquid, dull"
+  },
+  {
+    "name": "Fossilized Echoes",
+    "prompt": "Fossilized echoes of {prompt}, imprints in stone, preserved ancient memories, layered sedimentary textures",
+    "negative_prompt": "modern, digital, unweathered"
+  },
+  {
+    "name": "Frozen Time Fragments",
+    "prompt": "Frozen time fragments surrounding {prompt}, shattered suspended moments, crystallized clock faces",
+    "negative_prompt": "flowing, organic, untouched"
+  },
+  {
+    "name": "Glitchcore Dreamscape",
+    "prompt": "Glitchcore dreamscape of {prompt}, fragmented digital hallucinations, corrupted pixel noise, chaotic holograms",
+    "negative_prompt": "smooth, stable, traditional"
+  },
+  {
+    "name": "Golden Circuitry Engraving",
+    "prompt": "Golden circuitry engraving of {prompt}, embossed electronic pathways, detailed metallic etchings, luxury tech aesthetic",
+    "negative_prompt": "flat, organic, non-metallic"
+  },
+  {
+    "name": "Holographic Insectoid",
+    "prompt": "Holographic insectoid representation of {prompt}, transparent exoskeletons, cybernetic bug aesthetics, iridescent glow",
+    "negative_prompt": "fuzzy, organic, earthly"
+  },
+  {
+    "name": "Inkblot Rorschach Visions",
+    "prompt": "Inkblot Rorschach vision of {prompt}, shifting symmetrical shapes, psychological abstraction, high-contrast ink splotches",
+    "negative_prompt": "realistic, detailed, rigid"
+  },
+  {
+    "name": "Magnetic Fluid Waves",
+    "prompt": "Magnetic fluid waves flowing over {prompt}, dynamic rippling metallic liquid, soft physics interactions",
+    "negative_prompt": "static, flat, untextured"
+  },
+  {
+    "name": "Microgravity Ecosystem",
+    "prompt": "Microgravity ecosystem surrounding {prompt}, floating biospheres, suspended flora, delicate air-bound roots",
+    "negative_prompt": "grounded, stable, gravity-locked"
+  },
+  {
+    "name": "Molten Lava Sculpting",
+    "prompt": "Molten lava sculpting of {prompt}, bright orange glow, hardened volcanic crusts, geological formation",
+    "negative_prompt": "cold, smooth, untextured"
+  },
+  {
+    "name": "Paper Cutout Diorama",
+    "prompt": "Paper cutout diorama of {prompt}, layered silhouettes, shadowbox effect, hand-cut paper textures",
+    "negative_prompt": "realistic, 3D depth, photographic"
+  },
+  {
+    "name": "Resonant Sound Waves",
+    "prompt": "Resonant sound waves shaping {prompt}, vibrating frequency patterns, audio-reactive abstract forms, rippling energy",
+    "negative_prompt": "static, silent, still"
+  },
+  {
+    "name": "Cyberpunk Streetwear",
+    "prompt": "professional 3d model cyberpunk streetwear character with techwear outfit, LED visor, and cybernetic implants, octane render, highly detailed, volumetric, dramatic lighting",
+    "negative_prompt": "ugly, deformed, noisy, low poly, blurry, painting"
+  },
+  {
+    "name": "Cyber Hacker",
+    "prompt": "professional 3d model cyberpunk hacker with VR headset, data cables, glowing fingers in high-tech control room, octane render, highly detailed, volumetric, dramatic lighting",
+    "negative_prompt": "ugly, deformed, noisy, low poly, blurry, painting"
+  },
+  {
+    "name": "Techno Priestess",
+    "prompt": "professional 3d model cyberpunk techno priestess with circuit crown, glowing robes, and floating data spheres, octane render, highly detailed, volumetric, dramatic lighting",
+    "negative_prompt": "ugly, deformed, noisy, low poly, blurry, painting"
+  },
+  {
+    "name": "Android Assassin",
+    "prompt": "professional 3d model sleek cybernetic assassin android with glowing joints, stealth armor, futuristic weapons, octane render, highly detailed, volumetric, dramatic lighting",
+    "negative_prompt": "ugly, deformed, noisy, low poly, blurry, painting"
   }
 ]
