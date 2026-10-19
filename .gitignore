@@ -1,2 +1,16 @@
 .history
-__pycache__
+__pycache__/
+*.pyc
+
+# 個人樣式表與 Excel 原始檔（只留在本機）
+/ALL.json
+/ALL[0-9]*.json
+/ALL2.json
+*.xlsx
+*.xls
+
+# 備份、舊版與本機雜項
+/bakup/
+/scripts/old/
+/dir.txt
+/SKILL_*_v1.[0-4].txt

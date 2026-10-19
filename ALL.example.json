@@ -1,0 +1,119 @@
+[
+  {
+    "name": "上半身の鎧/upper armor",
+    "prompt": "{ full armor, |breastplate, |chainmail, |scale armor, |Arming doublet| gambeson,|cuirass, | backplate} { pauldrons, |shoulder armor, |bare shoulders, } {1-2$$ rerebrace, |couter, |vambraces, | gauntlets, | armored gloves, }",
+    "negative_prompt": "",
+    "category": "衣服 > 配件,衣服",
+    "namezh": "上半身鎧甲",
+    "namejp": "上半身の鎧",
+    "nameen": "upper armor"
+  },
+  {
+    "name": "下半身の鎧/bottom armor",
+    "prompt": "{faulds,| tassets,|armored dress, |} {1-2$$ cuisses, | poleyn, |greaves,| sabatons, |armored boots, } {1-4$$ hooded cloak, | cloak, | capelet,| aventail,| surcoat,| tabard, }",
+    "negative_prompt": "",
+    "category": "衣服 > 配件,衣服",
+    "namezh": "下半身鎧甲",
+    "namejp": "下半身の鎧",
+    "nameen": "bottom armor"
+  },
+  {
+    "name": "頭盔 / helmet",
+    "prompt": "{helmet,| {1-2$$ kabuto,| helmet,| horned helmet,| winged helmet,| barrel helmet,| bascinet,| coif,| gorget,| bevor,} }",
+    "negative_prompt": "",
+    "category": "衣服 > 配件,衣服",
+    "namezh": "頭盔",
+    "namejp": "ヘルメット",
+    "nameen": "helmet"
+  },
+  {
+    "name": "中世の酒場/Medieval taverns._1",
+    "prompt": "medieval fantasy,vaulted ceiling bar, {1girl |elf, pointy ears, } __hair_ornaments__, jewelry, flower, __earrings__ , hand_up, __necklace__, __color__ clothes, people, multiple_boys,, multiple_girls, holding, :d, teeth, solo_focus, indoors, cup, upper_teeth_only, alcohol, holding mugs, __color__ shirt, beer, beer_mug, bread, steak, food,wine, soup, wooden mug,wooden table,fried egg,",
+    "negative_prompt": "",
+    "category": "場景 > medieval fantasy,場景",
+    "namezh": "中世酒館",
+    "namejp": "中世の酒場",
+    "nameen": "Medieval taverns"
+  },
+  {
+    "name": "黄金の麦とざわめく風に包まれる/ Surrounded by golden wheat and a rustling wind_1",
+    "prompt": "{fantasy,| medieval,} 1girl, solo, looking_at_viewer, smile,holding, closed_mouth, standing, holding wheat, __color__ __40tops__, __hair_ornaments__,{ upper body,| portrait,| close-up,| full body,} outdoors, sky, cloud, blue_sky,cloudy_sky, suspenders, wind, scenery, sunset, suspender_skirt, field, evening, {1-2$$ depth of field,| blurry background,| blurry foreground, }, { from behind, | from side,| from below,| from above,| dutch angle,| | | | | | },wheat",
+    "negative_prompt": "",
+    "category": "場景 > medieval fantasy,場景",
+    "namezh": "被金色麥田與沙沙風聲環繞",
+    "namejp": "黄金の麦とざわめく風に包まれる",
+    "nameen": "Surrounded by golden wheat and a rustling wind"
+  },
+  {
+    "name": "焼きたてパンの香りに包まれる朝/morning with the smell of freshly baked bread",
+    "prompt": "medieval fantasy,morning with the smell of freshly baked bread ,1girl, food, day, indoors, window, light particles, sunlight, basket, bread, dappled_sunlight, shelf, jar, shop, __color__ apron, pastry, window_shade, baguette, pie, croissant",
+    "negative_prompt": "",
+    "category": "場景 > medieval fantasy,場景",
+    "namezh": "現烤麵包香氣中的早晨",
+    "namejp": "焼きたてパンの香りに包まれる朝",
+    "nameen": "morning with the smell of freshly baked bread"
+  },
+  {
+    "name": "中世の酒場/Medieval taverns.",
+    "prompt": "in medieval taverns,medieval fantasy,vaulted ceiling bar, {1girl |elf, pointy ears, } __hair_ornaments__, jewelry, flower, __earrings__ , hand_up, __necklace__, __color__ clothes, people, multiple_boys,, multiple_girls, holding, :d, teeth, solo_focus, indoors, cup, upper_teeth_only, alcohol, holding mugs, beer, beer_mug, bread, steak, food,wine, soup, wooden mug,wooden table,fried egg,",
+    "negative_prompt": "",
+    "category": "場景 > medieval fantasy,場景",
+    "namezh": "中世酒館",
+    "namejp": "中世の酒場",
+    "nameen": "Medieval taverns"
+  },
+  {
+    "name": "ファンタジー・ラピダリー/Fantasy Lapidary",
+    "prompt": "{fantasy,| medieval, } {elf, pointy_ears,| }, 1girl, solo, long_hair, looking_at_viewer, smile, hair_ornament, holding, jewelry, { upper body,| portrait,| close-up,| full body,} inoors, earrings, day, from_side, vines, plant, bookshelf, potted_plant, windowsill, shelf, jar, test_tube, flask, vial, potion, round-bottom_flask {1-2$$ depth of field,| blurry background,| blurry foreground, }, { from behind, | from side,| from below,| from above,| dutch angle,| | | | | | },",
+    "negative_prompt": "",
+    "category": "場景 > medieval fantasy,場景",
+    "namezh": "奇幻寶石工藝",
+    "namejp": "ファンタジー・ラピダリー",
+    "nameen": "Fantasy Lapidary"
+  },
+  {
+    "name": "霧深き森に灯/Lights in the misty fog forest",
+    "prompt": "Lights in the misty fog forest , loneliness mood,night , medieval fantasy, {1girl ,|1girl, animal_girl, animal_ears,extra_ears, } __hair_ornaments__, jewelry, flower, __earrings__ , hand_up, __necklace__, __color__ clothes, holding, outdoors, gloves, belt, hood, cape, tree, , animal, nature, cloak, hood_up, forest, lantern, ears_through_headwear, hooded_cloak,{ fox,| wolf| dog}, __color__ cloak, hooded_cape, vial, holding_lantern,{belt,| corset, } ,{starry sky,| moon, | crescent, } spot light, mystic theme,",
+    "negative_prompt": "",
+    "category": "場景 > medieval fantasy,場景",
+    "namezh": "霧深森林之燈",
+    "namejp": "霧深き森に灯",
+    "nameen": "Lights in the misty fog forest"
+  },
+  {
+    "name": "雪宿りで心落ち着く癒しのひととき/ A calming and healing moment in a snow lodge",
+    "prompt": "medieval fantasy, {pointy_ears,elf,| 1girl, } snowing, snow ,{ upper body,| portrait,| close-up,| full body,} jewelry, necklace, __hair_ornaments__ , closed_mouth, jewelry, outdoors, hand_up, hood, tree, hood_down, cloak, rain,winter, wooden house,wooden roof,brick wall, fur trim,celtic aesthetic, leather top, belt, choker, silent mood,hilt, sheath, { <lora:Watercolor_fantasy_IL_MIX:0.8> watercolor, traditional media, painting,|}",
+    "negative_prompt": "",
+    "category": "場景 > medieval fantasy,場景",
+    "namezh": "雪中旅宿的寧靜療癒時光",
+    "namejp": "雪宿りで心落ち着く癒しのひととき",
+    "nameen": "A calming and healing moment in a snow lodge"
+  },
+  {
+    "name": "街角BGM/Street Corner BGM",
+    "prompt": "Street Corner BGM, cosy,outdoors, sitting, solo_focus, bag,bracelet,building, wind, instrument,{ harp, | lute_(instrument),} sunset, music, close-up, road, smile holding_instrument, playing_instrument, street, evening, chair,wooden floor,wooden wall,belt,corset, capelet, ,desk,brick road, bar,cafe, medieval fantasy, 1girl __hair_ornaments__, jewelry, flower, __earrings__ , hand_up, __necklace__, __color__ clothes, people, 6+boys, 6+girls, faceless male",
+    "negative_prompt": "",
+    "category": "場景 > medieval fantasy,場景",
+    "namezh": "街角BGM",
+    "namejp": "街角BGM",
+    "nameen": "Street Corner BGM"
+  },
+  {
+    "name": "落葉と風車/ wind lift, falling_leaves and windmill",
+    "prompt": "{negative space,|} medieval fantasy, wind lift, falling_leaves,( windmill:1.3) ,1girl __hair_ornaments__, jewelry, flower, __earrings__ ,hand_up, __necklace__, __color__ clothes, sitting, outdoors, sky, day, medium_hair, cloud, blurry, black_dress, from_side, blue_sky, tree, looking_to_the_side, book, sash, floating_hair, leaf, cloudy_sky, building, wind, scenery, mountain, house, mountainous_horizon,landscape, hill, town, wind lift, falling_leaves and windmill",
+    "negative_prompt": "",
+    "category": "場景 > medieval fantasy,場景",
+    "namezh": "落葉與風車",
+    "namejp": "落葉と風車",
+    "nameen": "falling leaves and windmill"
+  },
+  {
+    "name": "ランプ工房/Lamp Workshop",
+    "prompt": "medieval fantasy,lamp workshop, crystal lamp, lamps,gem,aura, light particles, calm mood,1girl, {blush, smile| }, __hair_ornaments__, jewelry, flower, __earrings__ , indoors, hand_up, __necklace__, bottle, plant, gem, light_particles, floating, lantern, bookshelf, lamp, __color__ gemstone, shelf, floating_object, jar, levitation,a lot of lamp, __color__ clothes,",
+    "negative_prompt": "",
+    "category": "場景 > medieval fantasy,場景",
+    "namezh": "燈具工房",
+    "namejp": "ランプ工房",
+    "nameen": "Lamp Workshop"
+  }
+]
